@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/editor.css">
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link rel="stylesheet" type="text/css" href="css/toolbar.css">
+<style type="text/css">
+	.fakeTextInput{
+		border-style: solid;
+	}
+</style>
+</head>
+<body>
+	<div class="editor-container">
+		<canvas id="paintingCanvas" resize></canvas>
+	</div>
+	
+	<div class="toolbar">
+		<div id='paintingToolbar' class="toolsContainer">
+			<div class="tool_Test tool" data-name="Select" title="Select">Select</div>
+			<div class="tool_Test tool" data-name="Pen" title="Pen">Pen</div>
+			<div class="tool_Test tool" data-name="Shape" title="Shape">Shape</div>
+			<div class="tool_Test tool" data-name="Text" title="Text">Text</div>
+		</div>
+	</div>
+	
+	<nav class="nav" id='paintingMenu'>
+		<ul class="menu">
+			<input id="menuTab" type="checkbox" name="menu" hidden/>
+			<li class="item">
+				<label class="menuItem" for="menuTab">File</label>
+				<ul class='subMenu'>
+			      	<li>
+			      		<label class="subMenuItem">Import Image
+			      			<input id="imageUpload" type="file" name="files[]" multiple hidden>
+			      		</label>
+			      	</li>
+					<li id="exportImage">
+						<div class="subMenuItem">
+							Export Image
+						</div>
+					</li>
+			    </ul>
+			</li>
+			<li class="item">
+				<label class="menuItem" for="menuTab">Edit</label>
+				<ul class="subMenu" id="fileSubMenu">
+			      <li class="subMenuItem"><a href="#">S3</a></li>
+			      <li class="subMenuItem"><a href="#">S4</a></li>
+				</ul>
+			</li>
+			<li class='rightNav'>
+				<div><input type='text' id='peerId'><button id="connect">Connect</button><div>
+			</li>
+			<li class='rightNav'>
+				<div id='myId'><div>
+			</li>
+		</ul>
+	</nav>
+
+	
+</body>
+
+<!-- Load the library -->
+<!-- <script type="text/javascript" src="node_modules/paper/dist/paper-full.js"></script> -->
+<!-- <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="bower_components/file-saver/FileSaver.js"></script> -->
+<!-- <script src="lib/jquery.ui.widget.js"></script>
+<script src="lib/jquery.iframe-transport.js"></script>
+<script src="lib/jquery.fileupload.js"></script>
+<script src="lib/jquery.fileupload-process.js"></script>
+<script src="lib/jquery.fileupload-validate.js"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.14/peer.js"></script>
+
+
+<!-- Self-Defined JavaScript -->
+<script type="text/javascript" src="bin/app.bundle.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>
