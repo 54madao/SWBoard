@@ -1,14 +1,27 @@
-This is a ongoing project for users to draw something with other people.
 
+Collaboard
+============
 
-1. Improve painting components.
-	# modulization
-	# snapshot
+_Introduction_
+---------
 
-2. Improve P2P communication.
-	#messaging order: message queue? or create a new layer for each peer.
-	#real-time TCP or UDP?
+This is an ongoing project, which is an important piece of a jigsaw. It allows users to draw something with other users in real time.
 
-3. Improve Frontend.
-	#css
-	#framework
+Tools used - _JavaScript/ES6_, _PaperJS_, _PeerJS(WebRTC)_
+
+_Setup_
+---------
+
+Use __npm install__ to install dependencies
+
+_Compile_
+---------
+
+Use __webpack__ to compile sources.
+
+_Usage_
+---------
+
+1. Enter your peer's ID shown at top-right of his/her page and click connect.
+
+2. Select Pen tool and draw some segments, your peer can see it in real time.
