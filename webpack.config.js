@@ -5,7 +5,7 @@ var npm_dir = __dirname + '/node_modules';
 
 module.exports = {
     watch: true,
-    entry: __dirname + '/src/index.js',
+    entry: __dirname + '/src/js/index.js',
     output: {
         path: __dirname + '/bin',
         filename: 'app.bundle.js',
